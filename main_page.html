@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Міфології народів світу</title>
+</head>
+
+<style>
+    header {
+        position:relative;
+        background-color: #181818;
+        padding: 15px;
+        font:15px Luminari, fantasy;
+        text-align: right;
+    }
+    a{
+        font: 25px Trattatello, fantasy;
+        color: #f9f3fa;
+        margin-left: 10px;
+        text-decoration: none;
+    }
+    footer {
+        background-color: #181818;
+        padding: 10px;
+        text-align: left;
+        color: #f9f3fa;
+        font: 12px Trattatello;
+        position: auto;
+    }
+    body {
+        background: #000;
+        margin: 0;
+    }
+
+    .container{
+      text-align:center;
+      position:relative;
+    }
+    aa div img{
+        opacity: 0.5;
+        width: 100%;
+        height: 500px;
+        display: block;
+    }
+    .container .text1{
+      position:absolute;
+      bottom:0;
+      left:70px;
+      Top: 100px;
+      transition: 0.5s;
+      width:90%;
+      font:120px FreeMono, monospace;
+      color:#fff;
+    }
+
+    a div img{
+        opacity: 0.5;
+        transition: opacity 124ms linear, transform 124ms linear;
+        width: 100%;
+        height: 600px;
+        display: block;
+    }
+    a:hover div img{
+        opacity: 0.2;
+    }
+    a + a div{
+        background: #fff;
+    }
+    .blog_english{
+      display:block;
+      text-align:center;
+      position:relative;
+    }
+    .blog_english .text1{
+      opacity:1;
+      position:absolute;
+      bottom:0;
+      left:25%;
+      Top: 50%;
+      transform:translate(-50%, 0);
+      transition: 0.5s;
+      width:98%;
+      font-size:50px;
+      color:#fff;
+    }
+    .blog_english .text2{
+      opacity:0;
+      position:absolute;
+      bottom:0;
+      Top: 60%;
+      left:70%;
+      transform:translate(-50%, -50%);
+      transition: 0.5s;
+      font: 20px Trattatello;
+      padding:10px;
+      color:#fff;
+    }
+    .blog_english:hover .text2{
+      opacity:1;
+    }
+
+    .blog_egypt{
+      margin:0 auto;
+      display:block;
+      text-align:center;
+      position:relative;
+    }
+    .blog_egypt .text1{
+      opacity:1;
+      position:absolute;
+      bottom:0;
+      left:27%;
+      Top: 50%;
+      transform:translate(-50%, 0);
+      transition: 0.5s;
+      width:98%;
+      font-size:50px;
+      color:#fff;
+    }
+    .blog_egypt .text2{
+      opacity:0;
+      position:absolute;
+      bottom:0;
+      Top: center;
+      left:70%;
+      transform:translate(-50%, -50%);
+      transition: 0.5s;
+      font: 20px Trattatello;
+      padding: 10px;
+      color:#fff;
+    }
+    .blog_egypt:hover .text2{
+      opacity:1;
+    }
+
+    .blog_slovyan{
+      margin:0 auto;
+      display:block;
+      text-align:center;
+      position:relative;
+    }
+    .blog_slovyan .text1{
+      opacity:1;
+      position:absolute;
+      bottom:0;
+      left:28%;
+      Top: 50%;
+      transform:translate(-50%, 0);
+      transition: 0.5s;
+      width:98%;
+      font-size:50px;
+      color:#fff;
+    }
+    .blog_slovyan .text2{
+      opacity:0;
+      position:absolute;
+      bottom:0;
+      Top: 60%;
+      left:70%;
+      transform:translate(-50%, -50%);
+      transition: 0.5s;
+      font: 20px Trattatello;
+      padding: 10px;
+      color:#fff;
+    }
+    .blog_slovyan:hover .text2{
+      opacity:1;
+    }
+
+    .blog_skand{
+      margin:0 auto;
+      display:block;
+      text-align:center;
+      position:relative;
+    }
+    .blog_skand .text1{
+      opacity:1;
+      position:absolute;
+      bottom:0;
+      left:32%;
+      Top: 50%;
+      transform:translate(-50%, 0);
+      transition: 0.5s;
+      width:98%;
+      font-size:50px;
+      color:#fff;
+    }
+    .blog_skand .text2{
+      opacity:0;
+      position:absolute;
+      bottom:0;
+      Top: 60%;
+      left:70%;
+      transform:translate(-50%, -50%);
+      transition: 0.5s;
+      font: 20px Trattatello;
+      padding: 10px;
+      color:#fff;
+    }
+    .blog_skand:hover .text2{
+      opacity:1;
+    }
+
+    .blog_japan{
+      margin:0 auto;
+      display:block;
+      text-align:center;
+      position:relative;
+    }
+    .blog_japan .text1{
+      opacity:1;
+      position:absolute;
+      bottom:0;
+      left:26%;
+      Top: 50%;
+      transform:translate(-50%, 0);
+      transition: 0.5s;
+      width:98%;
+      font-size:50px;
+      color:#fff;
+    }
+    .blog_japan .text2{
+      opacity:0;
+      position:absolute;
+      bottom:0;
+      Top: 60%;
+      left:70%;
+      transform:translate(-50%, -50%);
+      transition: 0.5s;
+      font: 20px Trattatello;
+      padding: 10px;
+      color:#fff;
+    }
+    .blog_japan:hover .text2{
+      opacity:1;
+    }
+
+    .blog_grece{
+      margin:0 auto;
+      display:block;
+      text-align:center;
+      position:relative;
+    }
+    .blog_grece .text1{
+      opacity:1;
+      position:absolute;
+      bottom:0;
+      left:32%;
+      Top: 50%;
+      transform:translate(-50%, 0);
+      transition: 0.5s;
+      width:98%;
+      font-size:50px;
+      color:#fff;
+    }
+    .blog_grece .text2{
+      opacity:0;
+      position:absolute;
+      bottom:0;
+      Top: 60%;
+      left:70%;
+      transform:translate(-50%, -50%);
+      transition: 0.5s;
+      font: 20px Trattatello;
+      padding: 10px;
+      color:#fff;
+    }
+    .blog_grece:hover .text2{
+      opacity:1;
+    }
+
+</style>
+<body>
+    <header>
+        <a href="english.html">Англія</a>
+        <a href="egypt.html">Єгипет</a>
+        <a href="slovyan.html">Слов'яни</a>
+        <a href="skand.html">Скандинавія</a>
+        <a href="japan.html">Японія</a>
+        <a href="grece.html">Греція</a>
+
+    </header>
+
+    <div class='container'>
+        <aa>
+        <div>
+                <img src="templates/foto.jpg">
+            </div>
+        <div class="text1">
+            Міфології народів світу
+        </div>
+        </aa>
+    </div>
+
+    <div class="blog_english">
+        <a href="english.html">
+            <div>
+                <img src="templates/english_foto.png">
+            </div>
+            <div class="text1">
+                Міфи давньої Англії
+            </div>
+            <div class="text2">
+                Англійська міфологія – це міфи, які виникали протягом історії Англії.
+                Ці оповідання складаються з народних традицій, що розвинулися в Англії після нормандського завоювання,
+                інтегрованих із традиціями англосаксонської міфології, християнської міфології та кельтська міфологія.
+            </div>
+        </a>
+    </div>
+
+    <div class="blog_egypt">
+        <a href="egypt.html">
+            <div>
+                <img src="templates/egypt_foto.jpg">
+            </div>
+            <div class="text1">
+                Міфи давнього Єгипту
+            </div>
+            <div class="text2">
+                Міфологія Стародавнього Єгипту - збори міфів Стародавнього Єгипту, які описують дії давньоєгипетських
+                богів як засіб пізнання світу. Вірування, що виражають ці міфи, є важливою частиною давньоєгипетської
+                релігії. Міфи часто описуються в ранніх єгипетських текстах та мистецтві, в оповіданнях та релігійних
+                матеріалах, таких як гімни, заупокійні тексти, а також в оформленні храмів. Ці джерела рідко містять
+                повний виклад міфу та часто описують лише короткі фрагменти.
+            </div>
+        </a>
+    </div>
+
+    <div class="blog_slovyan">
+        <a href="slovyan.html">
+            <div>
+                <img src="templates/slovyan_foto.jpg">
+            </div>
+            <div class="text1">
+                Слов'янська міфологія
+            </div>
+            <div class="text2">
+                Слов'янська міфологія - сукупність міфологічних уявлень слов'янських народів. Власне слов'янські
+                міфологічні оповідання не збереглися: релігійно-міфологічна цілісність слов'ян була зруйнована
+                під час їхньої християнізації. Вища міфологія давніх слов'ян відома фрагментарно.
+            </div>
+        </a>
+    </div>
+
+    <div class="blog_skand">
+        <a href="skand.html">
+            <div>
+                <img src="templates/skand.jpg">
+            </div>
+            <div class="text1">
+                Скандинавська міфологія
+            </div>
+            <div class="text2">
+                Германо-скандинавська міфологія (інколи просто — скандинавська міфологія) — збірна назва для міфів
+                та релігійних уявлень різноманітних германських племен, що з'явилися на теренах Європи на початку
+                Залізної доби, тобто близько 500 року до нашої ери.
+            </div>
+        </a>
+    </div>
+
+    <div class="blog_japan">
+        <a href="japan.html">
+            <div>
+                <img src="templates/japan.jpg">
+            </div>
+            <div class="text1">
+                Японська міфологія
+            </div>
+            <div class="text2">
+                Система сакральних знань, що включає традиції синтоїзму та буддизму, а також народні повір'я.
+                Релігія синто містить безліч камі («божество» або «дух»), які задіяні в міфології. Японська міфологія
+                безпосередньо з культом імператора: імператорська сім'я зазвичай вважається прямим нащадком перших
+                богів. Японське слово тенно (天皇), імператор, буквально означає «божественний (або небесний) правитель».
+            </div>
+        </a>
+    </div>
+
+    <div class="blog_grece">
+        <a href="grece.html">
+            <div>
+                <img src="templates/grece.jpg">
+            </div>
+            <div class="text1">
+                Давньогрецька міфологія
+            </div>
+            <div class="text2">
+                Давньогрецька міфологія - міфологія древніх греків, що тісно переплітається з їх релігією. Вплинула на
+                розвиток культури і мистецтва всього світу і започаткувала незліченну безліч релігійних уявлень про
+                людину, героїв і богів.
+            </div>
+        </a>
+    </div>
+    <footer>
+            <h2>© Antonenko Nastya - Antonenko.anastasiya@vu.cdu.edu.ua    2022</h2>
+    </footer>
+</body>
+
+</html>
